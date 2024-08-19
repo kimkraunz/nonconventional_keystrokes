@@ -1,5 +1,6 @@
 {
-    "python.analysis.extraPaths": [${workspaceFolder
-        }
-    ]
+    "python.analysis.extraPaths": [
+        "$nonconventional_keystrokes"
+    ],
+    "jupyter.notebookFileRoot": "$model_weird_behavior"
 }

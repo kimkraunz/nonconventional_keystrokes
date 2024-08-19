@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "unique-behavior"
+version = "0.1.1"
+description = "Model exploration with unique keystroke actions"
+authors = ["Kim Kraunz <kim@mimoto.ai>"]
+license = "Copyright Mimoto Inc 2024"
+readme = "README.md"
+packages = [
+    { include = "model_weird_behavior" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polars-lts-cpu = "^1.2.1"
+pandas = "^1.5.3"
+numpy = "^1.24.3"
+scikit-learn = "1.2.2"
+xgboost = "^1.6.1"
+joblib = "^1.2.0"
+pyarrow = "^14.0.2"
+nomkl = "^0.0.3"
+imblearn = "*"
+black = "^24.2.0"
+importlib-resources = "^6.1.1"
+toml = "^0.10.2"
+gdrive_setup = { git = "git@github.com:mimotoai/gdrive_setup.git", branch="develop"}
+deprecation = "^2.1.0"
+distributed = "^2024.4.1"
+dask = "2024.4.1"
+seaborn = "^0.13.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.4"
+jupyter-book = "^0.15.1"
+jupyterlab = "^4.0.9"
+intake = "^0.7.0"
+jupyterlab-lsp = "^5.0.1"
+funcy = "^2.0"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
